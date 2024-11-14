@@ -12,3 +12,16 @@ Somente o administrador poderá fazer essas operações.
 ### MODELO LÓGICO
 ![Lógico_TK](https://github.com/user-attachments/assets/4e826ccc-1fb1-4abf-ab99-a314671c0840)
 
+### PROTÓTIPO
+
+## TELA INICIAL
+![Tela Inicial](https://github.com/user-attachments/assets/4aebb65f-db39-4eb3-a465-37f8bafc3ec3)
+
+## TELA EXCLUIR 
+![Tela Excluir](https://github.com/user-attachments/assets/47c2edc6-e5bd-4e1e-9da2-5470c56ca0a7)
+
+## TELA ALTERAR
+![Tela Alterar](https://github.com/user-attachments/assets/a2459504-bc97-45c2-9790-eb02a8fd8114)
+
+## TELA CONSULTAR
+![consultar](https://github.com/user-attachments/assets/5331bbb9-618a-466b-b075-9c7f8ff83a32)
