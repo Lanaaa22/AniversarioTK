@@ -1,6 +1,9 @@
 import win32com.client as win32
+from datetime import datetime
+import schedule
+import time
 
-def envia_email(nome, e):
+def envia_email(nome, e, data):
 
     #integração com o outlook
     outlook = win32.Dispatch('outlook.application')
@@ -41,10 +44,15 @@ def envia_email(nome, e):
         </tr>
     </table>
     """
-
     email.Send()
     print("EMAIL ENVIADO")
 
+
+def agendar_email(e, data, nome):
+    hoje = datetime.now()
+    if hoje.strftime("%d/%m") == data:
+        envia_email(nome, e, data)
+        
 
 
 def main():
@@ -56,7 +64,13 @@ def main():
     for i in range(qtd):
         nome = input("Digite o nome: ")
         email = input("Digite o email: ")
-        envia_email(nome, email)
+        data = input("Digite a data de nascimento: ")
+        envia_email(nome, email, data)
+    schedule.every().day.at("08:00").do(agendar_email)
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
+
 
 
 if __name__ == "__main__":
